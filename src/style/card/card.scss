@@ -1,0 +1,155 @@
+$baseWidth:750px;
+@function px($val) {
+    @return $val/$baseWidth*10+rem;
+}
+
+.index{
+    background:#fff;
+    height:100%;
+}
+.card_input{
+    padding:px(10px) px(24px);
+    .card_input_box{
+        border:1px solid #dcdcdc;
+        padding:px(38px) px(24px);
+        input{
+            width:100%;
+            height:px(36px);
+            line-height: px(36px);
+            border: none;
+            outline: none;
+            display: block;
+            font-size:px(36px);
+            color:#323232;
+        }
+        input::-webkit-input-placeholder {
+            color: #969696;
+            font-size: px(36px);
+        }
+    }
+}
+.card_list{
+    padding:0 px(24px);
+    border-bottom:1px solid #dcdcdc;
+    h3{
+        font-size:px(31px);
+        color:#323232;
+        line-height: px(82px);
+    }
+    ul{
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        flex-wrap:wrap;
+    }
+    li{
+        width:px(224px);
+        height:px(120px);
+        margin-right: px(8px);
+        border:1px solid #dcdcdc;
+        text-align: center;
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        flex-wrap:wrap;
+        align-content:center;
+        margin-bottom:px(20px);
+        h5{
+            color:#323232;
+            font-size:px(36px);
+            width: 100%;
+            line-height: px(40px);
+        }
+        p{
+            color:#969696;
+            font-size:px(24px);
+            width: 100%;
+            line-height: px(40px);
+        }
+    }
+    li:nth-child(3n){
+        margin-right:0;
+    }
+    .active{
+        border:1px solid #ff8546;
+        color:#ff8546;
+    }
+    .no_check{
+        h5{
+            color:#d0d0d0;
+        }
+        p{
+            color:#e3e3e3;
+        }
+    }
+
+}
+
+.card_num{
+     padding:0 px(24px);
+    border-bottom:1px solid #dcdcdc;
+    height:px(100px);
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    justify-content:space-between;
+    align-content:center;
+    h3{
+        font-size:px(31px);
+        color:#323232;
+        line-height: px(82px);
+        line-height: px(100px);
+    }
+    span{
+        display:inline-block;
+        text-align:center;
+        width:px(80px);
+        padding:0 px(20px);
+        background:#F4f4f4;
+        border-radius: 3px;
+        line-height:px(60px);
+        i{
+            display:block;
+            font-size:px(24px);
+            color:#969696;
+        }
+    }
+    .disabled{
+        opacity:0.6;
+    }
+    b{
+        display: inline-block;
+        width:px(40px);
+        font-size:px(28px);
+        line-height:px(40px);
+        text-align:center;
+    }
+}
+
+.card_bottom{
+    padding:px(38px) px(24px) 0;
+
+    .pay_btn{
+        width:100%;
+        background:#ff8546;
+        border-radius:px(10px);
+        line-height: px(88px);
+        color:#fff;
+        text-align: center;
+        font-size:px(35px);
+    }
+    .disabled{
+        background:#c8c8c8;
+    }
+
+    .prompt{
+        margin-top:px(50px);
+        h5{
+            font-size:px(28px);
+            color:#323232;
+            line-height:px(60px);
+        }
+        p{
+            font-size:px(26px);
+            color:#969696;
+            line-height: px(36px);
+        }
+    }
+}

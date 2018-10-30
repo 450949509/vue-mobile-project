@@ -1,0 +1,228 @@
+$baseWidth:750px;
+@function px($val) {
+    @return $val/$baseWidth*10+rem;
+}
+
+.cart{
+    height:100%;
+}
+.page-loadmore-listitem {
+
+    text-align: center;
+}
+
+.page-loadmore-listitem:first-child {
+    border-top: 1px solid #eee;
+}
+
+.page-loadmore-wrapper {
+    height:100%;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+}
+.cart_error{
+    text-align: center;
+    padding-top:px(400px);
+    img{
+        width:px(200px);
+        height:px(200px);
+    }
+    p{
+        font-size: px(28px);
+        margin-top:px(32px);
+        color: #787878;
+    }
+}
+.cart_top{
+    background:#F4F4F4;
+    height:100%;
+}
+ul{
+    margin-bottom:px(100px);
+    li{
+        height:px(200px);
+        padding:px(20px) px(24px);
+        margin-bottom:px(20px);
+        background:#fff;
+        display: flex;
+        justify-content:space-between;
+        div{
+            float:left;
+        }
+    }
+}
+.goods_1{
+    height:100%;
+
+    i{
+        font-size:px(32px);
+        line-height: px(200px);
+    }
+    .icon-roundcheckfill{
+        color:#ff8546;
+    }
+
+}
+.sold_out{
+    display: block;
+    width:px(64px);
+    height:px(32px);
+    background-size:cover;
+    margin-top:px(84px);
+    margin-left:px(-16px);
+    background-image:url(../../../../static/assets/img/soldOut.png);
+}
+.sold_no{
+    display: block;
+    width:px(64px);
+    height:px(32px);
+    background-size:cover;
+    margin-top:px(84px);
+    margin-left:px(-16px);
+    background-image:url(../../../../static/assets/img/soldNo.png);
+}
+.goods_2{
+    height:100%;
+    margin-right:px(20px);
+
+    img{
+        width:px(200px);
+        height:px(200px);
+
+    }
+}
+
+.goods_3{
+    height:100%;
+    position: relative;
+    .goods_title{
+        line-height: px(40px);
+        h5{
+            font-size:px(28px);
+            color: #323232;
+            width:px(344px);
+            margin-right:px(20px);
+            overflow : hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            float:left;
+        }
+        i{
+            color: #323232;
+            font-size:px(30px);
+            float:left;
+        }
+    }
+
+    .goods3_standard{
+        width:100%;
+
+        line-height: px(34px);
+        font-size:px(24px);
+        color:#646464;
+    }
+
+    .goods3_price{
+        position:absolute;
+        bottom:0;
+        line-height:px(44px);
+        width:100%;
+        span{
+            font-size: px(32px);
+            color: #ff8546;
+            float:left;
+        }
+        p{
+            float:right;
+            line-height: px(30px);
+            display: -ms-flexbox;
+            display: flex;
+            margin-top:px(8px);
+
+            i{
+                display: inline-block;
+                height:px(32px);
+                width:px(32px);
+                background-size:cover;
+                align-items:center;
+            }
+            .cart_del{
+                background-image:url(../../../../static/assets/img/cart_del.png);
+            }
+            .cart_add{
+                background-image:url(../../../../static/assets/img/cart_add.png);
+            }
+            b{
+                display: inline-block;
+                font-size: px(28px);
+                color: #323232;
+                margin:0 px(28px);
+            }
+        }
+    }
+}
+
+
+
+.cart_bottom{
+    position:fixed;
+    bottom:0;
+    padding-left:px(24px);
+    width:100%;
+    height:px(100px);
+    background:#fff;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content:space-between;
+    div{
+        float:left;
+        height:100%;
+    }
+    div:nth-child(1){
+        width:16%;
+        i{
+            font-size:px(30px);
+            display: inline-block;
+        }
+        .icon-roundcheckfill{
+            color:#ff8546;
+        }
+        span{
+            display: inline-block;
+            font-size:px(28px);
+            margin-left:px(-10px);
+            margin-top:px(-10px);
+            color:#323232;
+        }
+    }
+    div:nth-child(2){
+        text-align: left;
+        p{
+            line-height: px(44px);
+            span{
+                font-size:px(32px);
+                color:#323232;
+            }
+            b{
+                font-size:px(32px);
+                color:#ff8546;
+            }
+        }
+        h6{
+            font-size:px(22px);
+            line-height: px(32px);
+            color:#787878;
+        }
+    }
+    div:nth-child(3){
+        width:px(250px);
+        background:#ff8546;
+        color:#Fff;
+        text-align: center;
+        line-height: px(100px);
+        font-size:px(32px);
+        margin-left:px(24px);
+    }
+}

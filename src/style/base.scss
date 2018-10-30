@@ -1,0 +1,22 @@
+$baseWidth:750px;
+@function px($val) {
+    @return $val/$baseWidth*10+rem;
+}
+
+.mint-toast-text{
+    font-size:px(30px);
+    font-family: sans-serif;
+}
+
+.v-modal{
+    overflow: hidden;
+}
+
+
+.mint-toast.is-placemiddle{
+    z-index:3000;
+}
+
+.mint-popup-4{
+    overflow: hidden;
+}
